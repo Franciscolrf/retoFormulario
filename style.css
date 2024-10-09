@@ -1,0 +1,125 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    color: rgb(108,109,108);
+    font-family: Arial, sans-serif;
+    background-color: #e6f2f1;
+    display: flex;
+    justify-content: center;
+    align-items: justify;
+    height: 100vh;
+}
+
+
+.container {
+    width: 550px;
+    margin: 0 auto;
+    background-color: #f0f7f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    border-bottom: 1px solid #000;
+}
+
+.header {
+    background-color: rgb(235, 240, 240);
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+
+
+.input-group.gender {
+    width: 60%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: left;
+    color: rgb(53, 192, 152);
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: rgb(53, 192,152);
+}
+
+input, select, textarea {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+input[type="file"] {
+    padding: 0;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+input[type="range"] {
+    width: 70%;
+}
+
+input[type="email"] {
+    width: 208%;
+}
+
+output {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+}
+
+.footer {
+    text-align: center;
+}
+
+button {
+    
+    padding: 10px;
+    background-color: #58bfb9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: right;
+}
+
+button:hover {
+    background-color: #4aa8a3;
+}
+
+.hobbies {
+    display: outside;
+    flex-direction: row;
+    gap: 5px;
+}
