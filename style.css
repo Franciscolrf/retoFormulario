@@ -1,43 +1,37 @@
-* {
-    box-sizing: border-box;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    
+    background-color: #f4f4f4;
+    border-bottom: 5px solid #ccc;
 }
-
-body {
-    color: rgb(108,109,108);
-    font-family: Arial, sans-serif;
-    background-color: #e6f2f1;
-    display: flex;
-    justify-content: center;
-    align-items: justify;
-    height: 100vh;
-}
-
 
 .container {
     width: 550px;
-    margin: 0 auto;
-    background-color: #f0f7f8;
-    padding: 20px;
+    margin: 50px auto;
+    background-color: white;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
-    border-bottom: 1px solid #000;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .header {
-    background-color: rgb(235, 240, 240);
-    text-align: center;
-    margin-bottom: 20px;
+    background-color: rgb(215,220,221);
+    border-bottom: 1px solid #ccc;
     padding-bottom: 10px;
-    border-bottom: 2px solid #000000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0;
+    color: #333;
+    font-size: 24px;
 }
 
 form {
     display: flex;
     flex-direction: column;
-    
 }
 
 .row {
@@ -53,73 +47,93 @@ form {
 }
 
 
-
-.input-group.gender {
-    width: 60%;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: left;
+.highlight-label {
     color: rgb(53, 192, 152);
-}
-
-.input-group label {
     font-weight: bold;
-    margin-bottom: 5px;
-    font-size: 14px;
-    color: rgb(53, 192,152);
 }
 
-input, select, textarea {
-    padding: 8px;
+.gender label, .hobbies label {
+    color: inherit;
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"], select, textarea {
+    padding: 10px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 14px;
+    outline: none;
 }
 
-input[type="file"] {
-    padding: 0;
-}
+input[type="email"]{
 
-input[type="radio"], input[type="checkbox"] {
-    margin-right: 5px;
+    width: 200%;
 }
 
 input[type="range"] {
-    width: 70%;
+    width: 100%;
 }
 
-input[type="email"] {
-    width: 208%;
+
+input::placeholder, textarea::placeholder {
+    opacity: 0.5;
 }
 
-output {
-    display: inline-block;
-    width: 20%;
-    text-align: right;
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button[type="submit"] {
+    background-color: #35c098;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #2aa180;
+}
+
+.input-group-bio{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    resize: none;
 }
 
 .footer {
     text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #888;
 }
 
-button {
-    
-    padding: 10px;
-    background-color: #58bfb9;
-    color: white;
-    border: none;
-    border-radius: 10px;
-    font-size: 16px;
-    cursor: pointer;
-    align-self: right;
-}
-
-button:hover {
-    background-color: #4aa8a3;
-}
-
-.hobbies {
+.checkbox-group {
     display: outside;
-    flex-direction: row;
-    gap: 5px;
+    font-size: 15px;
+}
+
+
+
+.input-group.gender{
+    width: 100%;
+}
+
+.input-group.hobbies {
+    margin-left: 22px;
+    width: 100%;
+}
+
+.radio-group {
+    display: outside;
+    gap: 15px;
+    font-size: 15px;
+}
+
+#bio{
+    resize: none;
 }

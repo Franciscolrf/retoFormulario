@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Account</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section class="container">
-        
+
         <header class="header">
             <h1>Create Account</h1>
         </header>
@@ -16,56 +18,60 @@
         <form action="#">
             <div class="row">
                 <div class="input-group">
-                    <label for="first-name"><strong>First name</strong> *</label>
+                    <label for="first-name" class="highlight-label"><strong>First name</strong> *</label>
                     <input type="text" id="first-name" placeholder="enter your first name">
                 </div>
                 <div class="input-group">
-                    <label for="last-name">Last name</label>
+                    <label for="last-name" class="highlight-label">Last name</label>
                     <input type="text" id="last-name" placeholder="enter your last name">
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-group">
-                    <label for="email">Email*</label>
+                    <label for="email" class="highlight-label">Email*</label>
                     <input type="email" id="email" placeholder="enter your email">
                 </div>
             </div>
 
             <div class="row">
                 <div class="input-group">
-                    <label for="password">Password *</label>
+                    <label for="password" class="highlight-label">Password *</label>
                     <input type="password" id="password" placeholder="enter your password">
                 </div>
                 <div class="input-group">
-                    <label for="confirm-password">Confirm Password *</label>
+                    <label for="confirm-password" class="highlight-label">Confirm Password *</label>
                     <input type="password" id="confirm-password" placeholder="enter your password again">
                 </div>
             </div>
 
             <div class="row">
-                <div class="input-group.gender">
-                    <label><Strong><FONT  SIZE = 3 COLOR ="#35c098">Gender:</FONT></Strong></label>
+                <div class="input-group gender">
+                    <div class="highlight-label">
+                        <label>Gender:</label>
+                    </div> 
                     <div class="radio-group">
                         <label><input type="radio" name="gender" value="male"> Male</label>
                         <label><input type="radio" name="gender" value="female"> Female</label>
                     </div>
+                </div>
+                <div class="input-group hobbies">
+                    <div class="highlight-label">
+                        <label>Hobbies</label>
+                    </div>        
+                    <div class="checkbox-group">
+                        <label><input type="checkbox">Music</label>
+                        <label><input type="checkbox">Sports</label>
+                        <label><input type="checkbox">Travel</label>
+                        <label><input type="checkbox">Movies</label>
+                    </div>
+                </div>
+            </div>
 
-                </div>
-            </div>
-            <div class="row">
-                <div class="hobbies">
-                    <label>Hobbies</label>
-                    <label><input type="checkbox"> Music</label>
-                    <label><input type="checkbox"> Sports</label>
-                    <label><input type="checkbox"> Travel</label>
-                    <label><input type="checkbox"> Movies</label>
-                </div>
-            </div>
 
             <div class="row">
                 <div class="input-group">
-                    <label>Source of Income</label>
+                    <label class="highlight-label">Source of Income</label>
                     <select>
                         <option>Employed</option>
                         <option>Unemployed</option>
@@ -73,36 +79,41 @@
                     </select>
                 </div>
                 <div class="input-group">
-                    <label for="income">Income</label>
-                    <input type="range" id="income" min="0" max="100000" value="20000" oninput="this.nextElementSibling.value = this.value">
+                    <label for="income" class="highlight-label">Income</label>
+                    <input type="range" id="income" min="0" max="100000" value="20000"
+                        oninput="this.nextElementSibling.value = this.value">
                     <output>20K</output>
                 </div>
             </div>
 
-            
-
             <div class="row">
                 <div class="input-group">
-                    <label for="age">Age</label>
-                    <input type="number" id="age" min="1" value="18">
-                </div>
-                <div class="input-group">
-                    <label>Upload Profile Picture</label>
+                    <label class="highlight-label">Upload Profile Picture</label>
                     <input type="file">
                 </div>
+                <div class="input-group">
+                    <label for="age" class="highlight-label">Age</label>
+                    <input type="number" id="age" min="1" value="18">
+                </div>
+
             </div>
 
             <div class="row">
-                <div class="input-group">
-                    <label for="bio">Bio</label>
-                    <textarea id="bio" rows="4" ></textarea>
+                <div class="input-group-bio">
+                    <label for="bio" class="highlight-label">Bio</label>
+                    <textarea id="bio" rows="4"></textarea>
                 </div>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit">Create</button>
             </div>
 
             <footer class="footer">
-                <button type="submit">Create</button>
+                <p>&copy; 2024 All rights reserved</p>
             </footer>
         </form>
     </section>
 </body>
+
 </html>
