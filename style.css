@@ -137,3 +137,8 @@ button[type="submit"]:hover {
 #bio{
     resize: none;
 }
+
+output{
+    width: 11%;
+    background-color: #2aa180;
+}
